@@ -6,7 +6,13 @@ from redis_bootcamp import *
 from opencv_bootcamp import *
 from quick_sort import *
 from merge_sort import *
-from py_hw_5 import *
+# from py_hw_5 import *
+from py_hw_6 import *
+import random as r
+
+def random_array(len_of_array = 10, start_of_range = -100, end_of_range = 100):
+    random_array = [r.randint(start_of_range, end_of_range) for i in range(len_of_array)]
+    return random_array
 
 # hw_1()
 # hw_2()
@@ -19,4 +25,5 @@ from py_hw_5 import *
 # array = [1, 4, 56, 1, 512, 12, 12, 14, 2, 1, 7]
 # print(quick_sort(array))
 # print(merge_sort(array))
-hw_5()
+# hw_5()
+hw_6(random_array())
